@@ -1,0 +1,19 @@
+# Virtual Environment
+venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# YOLO Outputs
+runs/
+
+# Trained Models
+models/*.pt
+
+# Dataset
+dataset/
+videos/
+
+# VS Code
+.vscode/
