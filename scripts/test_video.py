@@ -1,16 +1,9 @@
 from ultralytics import YOLO
 
-# Load trained model
-model = YOLO("../models/best.pt")
+model = YOLO("../models/best_v2.pt")
 
-# Input video
-video_path = "../videos/test.mp4"
-
-# Run prediction
 results = model.predict(
-    source=video_path,
+    source="../videos/test.mp4",
     save=True,
     conf=0.25
 )
-
-print("Video prediction completed!")

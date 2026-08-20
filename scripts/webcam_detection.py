@@ -4,6 +4,8 @@ import cv2
 # Load trained model
 model = YOLO("../models/best.pt")
 
+print(model.names)
+
 # Open webcam
 cap = cv2.VideoCapture(0)
 
